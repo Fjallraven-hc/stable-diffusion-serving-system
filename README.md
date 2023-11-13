@@ -4,9 +4,11 @@ A low latency & high throughput stable diffusion serving system integrated with 
 - SLOs-aware iteration scheduling.
 - multi-model/LoRA concurrent serving.
 - Co-schedule inference/finetune task.
+- Low bit optimization (fp16 for recommend)
 - [xFormers](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Xformers), Toolbox to Accelerate Research on transformers, developed by Meta AI.
 - [DeepSpeed](https://github.com/microsoft/DeepSpeed), Extreme Speed and Scale for DL Training and Inference, developed by Microsoft Research.
 - [OneFlow](https://github.com/Oneflow-Inc/oneflow), a deep learning framework designed to be user-friendly, scalable and efficient.
+- Support stable diffusion checkpoints/LoRAs on [civitai](https://civitai.com/).
 - Machine Learning Compilation optimization.
 ## Environment install
 For HuggingFace diffusers pipeline, xFormers, DeepSpeed, use `base-env.yaml`.  
