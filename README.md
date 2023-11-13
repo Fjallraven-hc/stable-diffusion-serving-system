@@ -28,7 +28,7 @@ Inference setting:
 [Note](https://huggingface.co/docs/diffusers/optimization/memory#memory-efficient-attention), If you have PyTorch >= 2.0 installed, you should not expect a speed-up for inference when enabling xformers.
 | batch_size | PyTorch=2.1.0+diffusers=0.14.0 | OneFlow=0.9.0 |  xFormers=0.0.22 | DeepSpeed=0.12.2 |
 |:----:|:------:|:---:|:---:|:---:|
-| 1 | 1.660253 | 0.907718 | 1.837109 | 1.4444127429975198 |
+| 1 | 1.660253 | 0.907718 | 1.837109 | 1.444413 |
 | 2 | 2.154117 | 1.481392 | 2.294451 | 2.094967 |
 | 4 | 3.949180 | 2.621291 | 4.086211 | 3.907683 |
 | 8 | 7.741389 | 5.011853 | 7.610301 | 7.674476 |
