@@ -11,7 +11,7 @@ A low latency & high throughput stable diffusion serving system integrated with 
 - Support stable diffusion checkpoints/LoRAs on [civitai](https://civitai.com/).
 - Machine Learning Compilation optimization.
 ## Environment install
-For HuggingFace diffusers pipeline, xFormers, DeepSpeed, use `base-env.yaml`.  
+For HuggingFace diffusers pipeline, xFormers, DeepSpeed, use `base-env.yaml`. Complete DeepSpeed acceleration relies on [CUTLASS](https://github.com/NVIDIA/cutlass) installation.  
 For OneFlow, use `OneFlow.yaml`, after installation, replace `diffusers.models.unet_2d_condition.forward` function with code in `unet_forward_with_different_timesteps.py`.
 ## Performance
 Numbers are collected on Ubuntu 20.04.6 LTS with RTX 4090 24GB, CUDA=11.8.  
