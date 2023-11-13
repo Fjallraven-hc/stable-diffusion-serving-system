@@ -15,6 +15,7 @@ For HuggingFace diffusers pipeline, xFormers, DeepSpeed, use `base-env.yaml`. Co
 For OneFlow, use `OneFlow.yaml`, after installation, replace `diffusers.models.unet_2d_condition.forward` function with code in `unet_forward_with_different_timesteps.py`.
 ## Performance
 Numbers are collected on Ubuntu 20.04.6 LTS with RTX 4090 24GB, CUDA=11.8.  
+All settings use fp16. (Experiment results show that there is no obvious quality loss when using fp16, compared to fp32)  
 Inference setting:   
 ```
 {
