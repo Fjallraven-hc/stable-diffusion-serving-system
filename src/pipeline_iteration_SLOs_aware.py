@@ -6,6 +6,15 @@ import time
 from PIL import Image
 import torch.multiprocessing as multiprocessing
 from typing import Any, Callable, Dict, List, Optional, Union
+import sys
+import os
+
+# Get the absolute path to the current script
+script_path = os.path.abspath(sys.argv[0])
+script_dir = os.path.dirname(script_path)
+# Add the parent directory to sys.path
+project_root = os.path.dirname(script_dir)
+sys.path.insert(0, project_root)
 
 from block_stage_file import *
 

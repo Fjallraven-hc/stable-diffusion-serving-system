@@ -6,6 +6,15 @@ import oneflow as flow
 import torch
 import time
 import numpy as np
+import sys
+import os
+
+# Get the absolute path to the current script
+script_path = os.path.abspath(sys.argv[0])
+script_dir = os.path.dirname(script_path)
+# Add the parent directory to sys.path
+project_root = os.path.dirname(script_dir)
+sys.path.insert(0, project_root)
 
 from block_stage_file_for_OneFlow import *
 #from diffusers.models.unet_2d_condition import UNet2DConditionModel
